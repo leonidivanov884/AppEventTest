@@ -1,0 +1,36 @@
+.btn{
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+
+    padding: 0.6em 1.5em;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color .25s;
+}
+.btn.green{
+    background: #42B983FF;
+}
+.btn.green:hover{
+    background: #32a470;
+}
+.btn.green:disabled{
+    background: #2c865e;
+    cursor: default;
+}
+
+.btn.red{
+    background: #FF4C29;
+}
+.btn.red:hover{
+    background: #e73f1f;
+}
+.btn.red:disabled{
+    background: #dc3b1b;
+    cursor: default;
+}

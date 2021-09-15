@@ -1,0 +1,71 @@
+.card{
+    position: relative;
+    border-bottom: 2px solid #2c865e;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.07);
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: box-shadow .3s;
+}
+.card__img{
+    max-height: 170px;
+}
+.card__name{
+    font-weight: 600;
+    font-size: 18px;
+    margin: 15px 10px 20px;
+    color: #333;
+    flex-grow: 1;
+}
+.card__price{
+    background: var(--green);
+    box-shadow: var(--greenShadow);
+    color: #fff;
+    padding: 0.25em 1.1em;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 500;
+}
+.card img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform .3s;
+}
+.card__status{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    opacity: 0;
+    z-index: 8;
+    width: 60px;
+    height: 29px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: top .35s, opacity .35s;
+}
+.card__status svg{
+    width: 22px;
+    height: 22px;
+    fill: var(--green);
+}
+.card__status.active{
+    top: 10px;
+    opacity: 1;
+}
+
+.card:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover img {
+    transform: scale(1.055);
+}
